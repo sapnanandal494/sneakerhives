@@ -1,0 +1,254 @@
+/* ====================================================
+   SneakerHive — Contact Page Styles
+   ==================================================== */
+
+/* Contact Grid Layout */
+.contact-section { max-width: 1200px; margin: 0 auto; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Heading */
+.contact-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: 3px;
+  margin-bottom: 36px;
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Floating Label Form ── */
+.contact-form { display: flex; flex-direction: column; gap: 28px; }
+
+.field-group {
+  position: relative;
+}
+
+.field-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0 10px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color var(--transition);
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.field-input:focus { border-bottom-color: transparent; }
+
+/* Animated underline */
+.field-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  transition: width 0.4s cubic-bezier(.4,0,.2,1);
+  border-radius: 2px;
+}
+.field-input:focus ~ .field-line { width: 100%; }
+
+/* Floating Label */
+.field-label {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+/* Float up when input has value OR is focused */
+.field-input:focus ~ .field-label,
+.field-input:not(:placeholder-shown) ~ .field-label {
+  top: -8px;
+  font-size: 0.72rem;
+  color: var(--neon-blue);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* Select special case */
+.field-select {
+  color: var(--text-muted);
+  cursor: pointer;
+  padding-right: 20px;
+}
+.field-select option { background: #111; color: var(--text); }
+.field-select.has-value { color: var(--text); }
+
+/* Textarea */
+.field-textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.6;
+}
+
+/* Submit Button */
+.btn-submit {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-submit.sending {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Toast */
+.form-toast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  background: rgba(192,255,0,0.08);
+  border: 1px solid rgba(192,255,0,0.25);
+  border-radius: var(--radius-sm);
+  color: var(--neon-lime);
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.4s, transform 0.4s;
+}
+.form-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ── Info Cards ── */
+.contact-info-wrap { display: flex; flex-direction: column; gap: 20px; }
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 24px 28px;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.info-card:hover {
+  transform: translateX(6px);
+  box-shadow: -4px 0 24px rgba(0,240,255,0.08);
+}
+.info-icon { font-size: 1.6rem; flex-shrink: 0; margin-top: 2px; }
+.info-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+.info-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+.info-card a { color: var(--neon-blue); }
+.info-card a:hover { text-decoration: underline; }
+
+/* Social Row */
+.social-contact-row { margin-top: 8px; }
+.social-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 14px;
+}
+.social-links-big { display: flex; flex-direction: column; gap: 10px; }
+.social-link-big {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-glass);
+  transition: all var(--transition);
+}
+.social-link-big:hover {
+  border-color: var(--neon-blue);
+  color: var(--neon-blue);
+  background: rgba(0,240,255,0.05);
+  transform: translateX(4px);
+}
+.social-link-big span { font-size: 1.2rem; }
+
+/* ── FAQ ── */
+.faq-section { border-top: 1px solid var(--border); }
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(8px);
+}
+.faq-q {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 20px 24px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  transition: color var(--transition);
+}
+.faq-q:hover { color: var(--neon-blue); }
+.faq-arrow {
+  font-size: 1.4rem;
+  color: var(--neon-blue);
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+  flex-shrink: 0;
+}
+.faq-item.open .faq-arrow { transform: rotate(90deg); }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(.4,0,.2,1), padding 0.3s;
+  padding: 0 24px;
+}
+.faq-item.open .faq-a {
+  max-height: 300px;
+  padding: 0 24px 20px;
+}
+.faq-a p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+}

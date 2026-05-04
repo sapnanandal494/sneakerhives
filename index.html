@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SneakerHive — Own The Street</title>
+  <meta name="description" content="SneakerHive – Gen-Z sneaker culture starts here. Shop the hottest streetwear kicks, limited drops, and trending styles." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- Floating Background Sneakers -->
+  <div class="floating-sneakers" id="floatingSneakers"></div>
+
+  <!-- ==================== TICKER ==================== -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span>🔥 NEW DROP: Neon Phantom High-Top</span>
+      <span>⚡ FREE SHIPPING on orders over $150</span>
+      <span>👟 Limited Volt Runner — Only 12 Pairs Left</span>
+      <span>💎 100% Authenticated Every Drop</span>
+      <span>🎯 Use Code HIVE10 for 10% Off</span>
+      <span>🔥 NEW DROP: Neon Phantom High-Top</span>
+      <span>⚡ FREE SHIPPING on orders over $150</span>
+      <span>👟 Limited Volt Runner — Only 12 Pairs Left</span>
+      <span>💎 100% Authenticated Every Drop</span>
+      <span>🎯 Use Code HIVE10 for 10% Off</span>
+    </div>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">SNEAKERHIVE</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="page-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <canvas class="particle-canvas" id="particleCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content" id="heroContent">
+      <div class="hero-eyebrow hero-el">✦ Est. 2026 — Gen-Z Culture ✦</div>
+      <h1 class="hero-el glitch" data-text="Own The Street">Own The<br/>Street</h1>
+      <p class="hero-el">Premium Sneaker Drops. No Gatekeeping.</p>
+      <div class="hero-buttons hero-el">
+        <a href="shop.html" class="btn btn-primary page-link">Shop Now</a>
+        <button class="btn btn-ghost" id="btnGravity">Drop the Heat 🔥</button>
+      </div>
+      <div class="hero-stats hero-el">
+        <div class="hero-stat"><span class="hs-num">10K+</span><span class="hs-lbl">Happy Customers</span></div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat"><span class="hs-num">500+</span><span class="hs-lbl">Drops Delivered</span></div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat"><span class="hs-num">4.9★</span><span class="hs-lbl">Average Rating</span></div>
+      </div>
+    </div>
+    <button class="btn btn-ghost" id="btnReset" style="display:none; margin-top: 30px; position:relative; z-index:10;">Reset ↺</button>
+  </section>
+
+  <!-- ==================== FEATURED SNEAKERS ==================== -->
+  <section class="section" id="featured">
+    <h2 class="section-title reveal">Featured Drops</h2>
+    <p class="section-subtitle reveal">Fresh heat straight from the hive</p>
+
+    <div class="products-grid">
+      <!-- Card 1 -->
+      <div class="product-card reveal">
+        <div class="card-img">
+          <img src="images/sneaker1.png" alt="Neon Phantom High-Top" />
+          <div class="quick-view"><span>Quick View</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Neon Phantom</h3>
+          <p class="price">$189</p>
+          <button class="btn-cart">Add to Cart 🛒</button>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="product-card reveal">
+        <div class="card-img">
+          <img src="images/sneaker2.png" alt="Volt Runner Retro" />
+          <div class="quick-view"><span>Quick View</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Volt Runner</h3>
+          <p class="price">$159</p>
+          <button class="btn-cart">Add to Cart 🛒</button>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="product-card reveal">
+        <div class="card-img">
+          <img src="images/sneaker3.png" alt="Shadow Skate Low" />
+          <div class="quick-view"><span>Quick View</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Shadow Skate</h3>
+          <p class="price">$139</p>
+          <button class="btn-cart">Add to Cart 🛒</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <span class="footer-logo">SNEAKERHIVE</span>
+    <p class="footer-copy">&copy; 2026 SneakerHive. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">📸</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+      <a href="#" aria-label="TikTok">🎵</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING CHAT WIDGET ==================== -->
+  <div class="chat-widget" id="chatWidget">
+
+    <!-- The Panel -->
+    <div class="chat-panel" id="chatPanel">
+
+      <!-- Animated border glow -->
+      <div class="cp-border-top"></div>
+      <div class="cp-border-right"></div>
+
+      <!-- Corner brackets (tech UI) -->
+      <span class="cp-corner cp-tl"></span>
+      <span class="cp-corner cp-tr"></span>
+      <span class="cp-corner cp-bl"></span>
+      <span class="cp-corner cp-br"></span>
+
+      <!-- Header -->
+      <div class="chat-panel-header">
+        <div class="chat-avatar">
+          <span class="avatar-ring"></span>
+          🤖
+        </div>
+        <div class="chat-info">
+          <div class="chat-name">
+            SneakerHive AI
+            <span class="ai-tag">GPT</span>
+          </div>
+          <div class="chat-status">
+            <span class="status-dot"></span>
+            Online — avg reply &lt;10s
+          </div>
+        </div>
+        <!-- Mic button -->
+        <button class="mic-btn" id="micBtn" aria-label="Voice input" title="Speak your question">
+          <svg class="mic-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5zm6 6c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Waveform canvas (visible while recording) -->
+      <div class="voice-bar" id="voiceBar">
+        <canvas class="waveform-canvas" id="waveformCanvas" width="300" height="36"></canvas>
+        <span class="voice-transcript" id="voiceTranscript">Listening…</span>
+      </div>
+
+      <!-- Scan line overlay -->
+      <div class="chat-scanline"></div>
+
+      <!-- Zapier chat iframe -->
+      <iframe
+        src="https://chat-box-83515c.zapier.app/"
+        title="SneakerHive AI Chat"
+        allow="microphone; camera"
+        loading="lazy"
+        id="chatIframe"
+      ></iframe>
+
+      <!-- Footer bar -->
+      <div class="cp-footer">
+        <span>Powered by</span>
+        <span class="cp-footer-brand">SNEAKERHIVE AI ⚡</span>
+      </div>
+    </div>
+
+    <!-- Bubble toggle -->
+    <button class="chat-bubble" id="chatBubble" aria-label="Toggle chat" aria-expanded="false">
+      <span class="chat-badge" id="chatBadge">1</span>
+      <svg class="icon-open" viewBox="0 0 24 24">
+        <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+      </svg>
+      <svg class="icon-close" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
+      <!-- Orbit ring -->
+      <span class="bubble-orbit"></span>
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

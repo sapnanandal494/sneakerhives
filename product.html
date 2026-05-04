@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SneakerHive — Neon Phantom</title>
+  <meta name="description" content="Shop the Neon Phantom High-Top sneaker at SneakerHive. Premium street sneakers with next-gen cushioning and iconic neon design." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Page Transition -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- Floating Background Sneakers -->
+  <div class="floating-sneakers" id="floatingSneakers"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo page-link">SNEAKERHIVE</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="page-link">Home</a></li>
+      <li><a href="shop.html" class="active page-link">Shop</a></li>
+      <li><a href="about.html" class="page-link">About</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ==================== PRODUCT DETAIL ==================== -->
+  <main class="product-page">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb reveal" aria-label="breadcrumb">
+      <a href="index.html" class="page-link">Home</a>
+      <span class="bc-sep">›</span>
+      <a href="shop.html" class="page-link">Shop</a>
+      <span class="bc-sep">›</span>
+      <span class="bc-current">Neon Phantom</span>
+    </nav>
+
+    <div class="product-layout">
+
+      <!-- ── Left: Image Gallery ── -->
+      <div class="gallery-col reveal-left">
+        <!-- Thumbnails -->
+        <div class="thumb-strip" id="thumbStrip">
+          <button class="thumb active" data-color="#00f0ff" aria-label="View blue colorway">
+            <span class="thumb-swatch" style="background:linear-gradient(135deg,#00f0ff,#b026ff)"></span>
+          </button>
+          <button class="thumb" data-color="#c0ff00" aria-label="View lime colorway">
+            <span class="thumb-swatch" style="background:linear-gradient(135deg,#c0ff00,#00f0ff)"></span>
+          </button>
+          <button class="thumb" data-color="#ff2d95" aria-label="View pink colorway">
+            <span class="thumb-swatch" style="background:linear-gradient(135deg,#ff2d95,#b026ff)"></span>
+          </button>
+        </div>
+
+        <!-- Main Image Display -->
+        <div class="main-image-wrap" id="mainImageWrap">
+          <div class="main-image-bg" id="mainImageBg"></div>
+          <div class="sneaker-visual" id="sneakerVisual">
+            <span class="sneaker-emoji" id="sneakerEmoji">👟</span>
+          </div>
+          <!-- Badge -->
+          <span class="img-badge">Limited Drop</span>
+          <!-- Zoom hint -->
+          <span class="zoom-hint">Hover to zoom</span>
+        </div>
+      </div>
+
+      <!-- ── Right: Product Info ── -->
+      <div class="info-col reveal-right">
+
+        <span class="product-tag">New Arrival</span>
+        <h1 class="product-name">Neon Phantom<br/><span>High-Top</span></h1>
+
+        <!-- Rating -->
+        <div class="product-rating" aria-label="Rating: 4.8 out of 5">
+          <span class="stars">★★★★★</span>
+          <span class="rating-count">4.8 (312 reviews)</span>
+        </div>
+
+        <!-- Price -->
+        <div class="product-price-row">
+          <span class="product-price" id="productPrice">$189</span>
+          <span class="price-old">$229</span>
+          <span class="price-badge">17% OFF</span>
+        </div>
+
+        <p class="product-desc">
+          The Neon Phantom redefines high-top silhouettes with ultra-lightweight mesh construction,
+          reactive cushioning, and a signature neon glow strip. Built for the streets, designed for
+          the bold. Limited pairs available — cop before they're gone.
+        </p>
+
+        <!-- Color Selector -->
+        <div class="selector-group">
+          <label class="selector-label">Colorway: <span id="selectedColor" class="selected-value">Cyber Blue</span></label>
+          <div class="color-dots" id="colorDots">
+            <button class="color-dot active" data-name="Cyber Blue"   style="background:linear-gradient(135deg,#00f0ff,#b026ff)" aria-label="Cyber Blue"></button>
+            <button class="color-dot"        data-name="Acid Lime"    style="background:linear-gradient(135deg,#c0ff00,#00f0ff)" aria-label="Acid Lime"></button>
+            <button class="color-dot"        data-name="Neon Punk"    style="background:linear-gradient(135deg,#ff2d95,#b026ff)" aria-label="Neon Punk"></button>
+          </div>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="selector-group">
+          <label class="selector-label">Size (US): <span id="selectedSize" class="selected-value">—</span></label>
+          <div class="size-grid" id="sizeGrid">
+            <button class="size-btn" data-size="7">7</button>
+            <button class="size-btn" data-size="8">8</button>
+            <button class="size-btn" data-size="9">9</button>
+            <button class="size-btn" data-size="10">10</button>
+            <button class="size-btn disabled" data-size="10.5" disabled>10.5</button>
+            <button class="size-btn" data-size="11">11</button>
+            <button class="size-btn" data-size="12">12</button>
+            <button class="size-btn disabled" data-size="13" disabled>13</button>
+          </div>
+          <p class="size-note">Sold out sizes unavailable. <a href="#">Size guide →</a></p>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="product-ctas">
+          <button class="btn btn-primary btn-add-cart" id="btnAddCart">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zm-14.83-3h14.83l1-5H4.41L3.17 5H1V3H0v2h3l1.17 5.88L5.5 18H17"/></svg>
+            Add to Cart
+          </button>
+          <button class="btn btn-ghost btn-wishlist" id="btnWishlist" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" width="20" height="20" id="heartIcon"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="trust-row">
+          <div class="trust-item"><span>🚚</span> Free Shipping</div>
+          <div class="trust-item"><span>↩️</span> Easy Returns</div>
+          <div class="trust-item"><span>🔒</span> Secure Pay</div>
+        </div>
+
+      </div><!-- /info-col -->
+    </div><!-- /product-layout -->
+
+    <!-- ==================== REVIEWS TEASER ==================== -->
+    <section class="section reviews-section">
+      <h2 class="section-title reveal">What The Hive Says</h2>
+      <p class="section-subtitle reveal">Real drops. Real reviews.</p>
+      <div class="reviews-grid">
+        <div class="review-card glass-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"These hit different fr fr. Wore them to a drop party and everyone stopped me to ask where I got them. GOATED."</p>
+          <div class="review-author">— @jaykayflex</div>
+        </div>
+        <div class="review-card glass-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Cyber Blue colorway is unreal in person. Shipped in 2 days and the box was a whole vibe. SneakerHive never misses."</p>
+          <div class="review-author">— @sophiastreetwear</div>
+        </div>
+        <div class="review-card glass-card reveal">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"Fit a little narrow but comfort is 10/10. Worth going half a size up. Will 100% be copping the next drop."</p>
+          <div class="review-author">— @milorunz</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <span class="footer-logo">SNEAKERHIVE</span>
+    <p class="footer-copy">&copy; 2026 SneakerHive. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">📸</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+      <a href="#" aria-label="TikTok">🎵</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING CHAT WIDGET ==================== -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-panel-header">
+        <div class="chat-avatar">👟</div>
+        <div class="chat-info">
+          <div class="chat-name">SneakerHive Support</div>
+          <div class="chat-status">Online — ready to help</div>
+        </div>
+      </div>
+      <iframe
+        src="https://chat-box-83515c.zapier.app/"
+        title="SneakerHive Live Chat"
+        allow="microphone; camera"
+        loading="lazy"
+      ></iframe>
+    </div>
+    <button class="chat-bubble" id="chatBubble" aria-label="Toggle chat" aria-expanded="false">
+      <span class="chat-badge" id="chatBadge">1</span>
+      <svg class="icon-open" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+      </svg>
+      <svg class="icon-close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

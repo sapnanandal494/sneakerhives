@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SneakerHive — Contact Us</title>
+  <meta name="description" content="Get in touch with SneakerHive. Order support, collabs, press, and everything in between." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>" />
+</head>
+<body>
+
+  <div class="preloader" id="preloader"><div class="preloader-spinner"></div></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="page-transition" id="pageTransition"></div>
+  <div class="floating-sneakers" id="floatingSneakers"></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo page-link">SNEAKERHIVE</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="page-link">Home</a></li>
+      <li><a href="shop.html" class="page-link">Shop</a></li>
+      <li><a href="about.html" class="page-link">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="min-height:52vh;">
+    <div class="hero-content">
+      <h1>Hit Us Up</h1>
+      <p>Questions, collabs, press, or just vibes — we're here.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="section contact-section">
+    <div class="contact-grid">
+
+      <!-- Form -->
+      <div class="contact-form-wrap reveal-left">
+        <h2 class="contact-heading">Send a Message</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+
+          <div class="field-group">
+            <input type="text" id="cName" class="field-input" placeholder=" " required />
+            <label for="cName" class="field-label">Your Name</label>
+            <span class="field-line"></span>
+          </div>
+
+          <div class="field-group">
+            <input type="email" id="cEmail" class="field-input" placeholder=" " required />
+            <label for="cEmail" class="field-label">Email Address</label>
+            <span class="field-line"></span>
+          </div>
+
+          <div class="field-group">
+            <select id="cSubject" class="field-input field-select" required>
+              <option value="" disabled selected></option>
+              <option value="order">Order / Shipping</option>
+              <option value="return">Returns &amp; Exchanges</option>
+              <option value="collab">Collab / Partnership</option>
+              <option value="press">Press Inquiry</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="cSubject" class="field-label">Subject</label>
+            <span class="field-line"></span>
+          </div>
+
+          <div class="field-group">
+            <textarea id="cMessage" class="field-input field-textarea" placeholder=" " rows="5" required></textarea>
+            <label for="cMessage" class="field-label">Your Message</label>
+            <span class="field-line"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit" id="btnSubmit">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            Send Message
+          </button>
+
+          <div class="form-toast" id="formToast" role="alert" aria-live="polite">
+            ✅ Message sent! We'll reply within 24 hrs.
+          </div>
+        </form>
+      </div>
+
+      <!-- Info + Socials -->
+      <div class="contact-info-wrap reveal-right">
+
+        <div class="info-card glass-card">
+          <span class="info-icon">📍</span>
+          <div>
+            <h3>HQ</h3>
+            <p>42 Hive Street, Brooklyn, NY 11201</p>
+          </div>
+        </div>
+
+        <div class="info-card glass-card">
+          <span class="info-icon">📧</span>
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:hello@sneakerhive.com">hello@sneakerhive.com</a></p>
+          </div>
+        </div>
+
+        <div class="info-card glass-card">
+          <span class="info-icon">⏰</span>
+          <div>
+            <h3>Hours</h3>
+            <p>Mon–Fri: 9AM – 6PM EST<br>Weekends: 10AM – 4PM EST</p>
+          </div>
+        </div>
+
+        <div class="social-contact-row">
+          <span class="social-label">Find us on</span>
+          <div class="social-links-big">
+            <a href="#" class="social-link-big" aria-label="Instagram"><span>📸</span> Instagram</a>
+            <a href="#" class="social-link-big" aria-label="TikTok"><span>🎵</span> TikTok</a>
+            <a href="#" class="social-link-big" aria-label="Twitter"><span>🐦</span> Twitter</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <h2 class="section-title reveal">Quick Answers</h2>
+    <p class="section-subtitle reveal">Before you hit send</p>
+    <div class="faq-list" id="faqList">
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          How long does shipping take? <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-a">
+          <p>Standard shipping takes 3–5 business days. Express (1–2 days) is available at checkout. Same-day dispatch for orders before 2PM EST on weekdays.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Can I return or exchange? <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes — 30 days from delivery. Items must be unworn and in original packaging. Message us and we'll handle the rest, no hassle.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Are all sneakers 100% authentic? <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-a">
+          <p>Every pair is verified by our authentication team before it ships. Zero tolerance on fakes — guaranteed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          How do I collab with SneakerHive? <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-a">
+          <p>We're always open to dope partnerships. Use the form above, pick "Collab / Partnership" and our team will be in touch within 48 hrs.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer-logo">SNEAKERHIVE</span>
+    <p class="footer-copy">&copy; 2026 SneakerHive. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">📸</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+      <a href="#" aria-label="TikTok">🎵</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-panel-header">
+        <div class="chat-avatar">👟</div>
+        <div class="chat-info">
+          <div class="chat-name">SneakerHive Support</div>
+          <div class="chat-status">Online — ready to help</div>
+        </div>
+      </div>
+      <iframe src="https://chat-box-83515c.zapier.app/" title="SneakerHive Live Chat" allow="microphone; camera" loading="lazy"></iframe>
+    </div>
+    <button class="chat-bubble" id="chatBubble" aria-label="Toggle chat" aria-expanded="false">
+      <span class="chat-badge" id="chatBadge">1</span>
+      <svg class="icon-open" viewBox="0 0 24 24"><path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

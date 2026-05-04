@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SneakerHive — About Us</title>
+    <meta name="description"
+        content="Learn about SneakerHive — the Gen-Z sneaker brand redefining street identity, fashion, and sneaker culture." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>" />
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- Floating Background Sneakers -->
+    <div class="floating-sneakers" id="floatingSneakers"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo page-link">SNEAKERHIVE</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="page-link">Home</a></li>
+            <li><a href="shop.html" class="page-link">Shop</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ==================== ABOUT HERO ==================== -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <h1>Our Story</h1>
+            <p>More than sneakers. It's a movement.</p>
+        </div>
+    </section>
+
+    <!-- ==================== BRAND STORY ==================== -->
+    <section class="section">
+        <div class="brand-story">
+            <div class="story-text reveal-left">
+                <h2>Born From The Streets</h2>
+                <p>
+                    SneakerHive was built for the ones who live and breathe street culture.
+                    We don't follow trends — we set them. Every drop is curated for the bold,
+                    the expressive, and the unapologetically Gen-Z.
+                </p>
+                <p>
+                    Our mission is simple: make premium sneaker culture accessible to everyone.
+                    No gatekeeping. No hype taxes. Just raw, authentic heat delivered straight
+                    to your door.
+                </p>
+                <p>
+                    From sold-out collabs to everyday essentials, SneakerHive is where your
+                    next grail lives. Welcome to the hive. 🐝
+                </p>
+            </div>
+            <div class="story-image reveal-right">
+                <img src="images/sneaker4.png" alt="SneakerHive sneaker showcase" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="section">
+        <h2 class="section-title reveal">Why The Hive?</h2>
+        <p class="section-subtitle reveal">What makes us different from the rest</p>
+
+        <div class="features-grid">
+            <div class="feature-card glass-card reveal">
+                <span class="feature-icon">⚡</span>
+                <h3>Fast Delivery</h3>
+                <p>Lightning-fast shipping. Order today, flex tomorrow. We move as fast as you do.</p>
+            </div>
+            <div class="feature-card glass-card reveal">
+                <span class="feature-icon">💎</span>
+                <h3>Premium Quality</h3>
+                <p>Every pair is 100% authenticated and quality-checked. No fakes. No compromises.</p>
+            </div>
+            <div class="feature-card glass-card reveal">
+                <span class="feature-icon">🔥</span>
+                <h3>Trend Driven</h3>
+                <p>We stay ahead of the curve. If it's hot on the streets, it's already in our store.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATS ==================== -->
+    <section class="section stats-section">
+        <div class="stats-grid">
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Drops Delivered</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Star Reviews ⭐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <span class="footer-logo">SNEAKERHIVE</span>
+        <p class="footer-copy">&copy; 2026 SneakerHive. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING CHAT WIDGET ==================== -->
+    <div class="chat-widget" id="chatWidget">
+      <div class="chat-panel" id="chatPanel">
+        <div class="chat-panel-header">
+          <div class="chat-avatar">👟</div>
+          <div class="chat-info">
+            <div class="chat-name">SneakerHive Support</div>
+            <div class="chat-status">Online — ready to help</div>
+          </div>
+        </div>
+        <iframe
+          src="https://chat-box-83515c.zapier.app/"
+          title="SneakerHive Live Chat"
+          allow="microphone; camera"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <button class="chat-bubble" id="chatBubble" aria-label="Toggle chat" aria-expanded="false">
+        <span class="chat-badge" id="chatBadge">1</span>
+        <svg class="icon-open" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

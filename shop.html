@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SneakerHive — Shop</title>
+    <meta name="description"
+        content="Browse the hottest sneaker drops at SneakerHive. Street, sports, limited editions, and trending kicks for Gen-Z." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>" />
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- Floating Background Sneakers -->
+    <div class="floating-sneakers" id="floatingSneakers"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo page-link">SNEAKERHIVE</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="page-link">Home</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="about.html" class="page-link">About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ==================== SHOP HEADER ==================== -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <h1>The Drop Zone</h1>
+            <p>Every pair tells a story. Find yours.</p>
+        </div>
+    </section>
+
+    <!-- ==================== FILTER BAR ==================== -->
+    <section class="section" style="padding-top: 0;">
+        <div class="filter-bar reveal">
+            <button class="filter-pill active">All</button>
+            <button class="filter-pill">Street</button>
+            <button class="filter-pill">Sports</button>
+            <button class="filter-pill">Limited</button>
+            <button class="filter-pill">Trending</button>
+        </div>
+
+        <!-- ==================== PRODUCT GRID ==================== -->
+        <div class="products-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card reveal">
+                <div class="card-img">
+                    <img src="images/sneaker1.png" alt="Neon Phantom" />
+                    <div class="quick-view"><span>Quick View</span></div>
+                </div>
+                <div class="card-body">
+                    <h3>Neon Phantom</h3>
+                    <p class="price">$189</p>
+                    <button class="btn-cart">Add to Cart 🛒</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card reveal">
+                <div class="card-img">
+                    <img src="images/sneaker2.png" alt="Volt Runner" />
+                    <div class="quick-view"><span>Quick View</span></div>
+                </div>
+                <div class="card-body">
+                    <h3>Volt Runner</h3>
+                    <p class="price">$159</p>
+                    <button class="btn-cart">Add to Cart 🛒</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card reveal">
+                <div class="card-img">
+                    <img src="images/sneaker3.png" alt="Shadow Skate" />
+                    <div class="quick-view"><span>Quick View</span></div>
+                </div>
+                <div class="card-body">
+                    <h3>Shadow Skate</h3>
+                    <p class="price">$139</p>
+                    <button class="btn-cart">Add to Cart 🛒</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card reveal">
+                <div class="card-img">
+                    <img src="images/sneaker4.png" alt="Blaze Court" />
+                    <div class="quick-view"><span>Quick View</span></div>
+                </div>
+                <div class="card-body">
+                    <h3>Blaze Court</h3>
+                    <p class="price">$209</p>
+                    <button class="btn-cart">Add to Cart 🛒</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card reveal">
+                <div class="card-img">
+                    <img src="images/sneaker5.png" alt="Ghost Mono" />
+                    <div class="quick-view"><span>Quick View</span></div>
+                </div>
+                <div class="card-body">
+                    <h3>Ghost Mono</h3>
+                    <p class="price">$179</p>
+                    <button class="btn-cart">Add to Cart 🛒</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card reveal">
+                <div class="card-img">
+                    <img src="images/sneaker6.png" alt="Acid Platform" />
+                    <div class="quick-view"><span>Quick View</span></div>
+                </div>
+                <div class="card-body">
+                    <h3>Acid Platform</h3>
+                    <p class="price">$199</p>
+                    <button class="btn-cart">Add to Cart 🛒</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <span class="footer-logo">SNEAKERHIVE</span>
+        <p class="footer-copy">&copy; 2026 SneakerHive. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING CHAT WIDGET ==================== -->
+    <div class="chat-widget" id="chatWidget">
+      <div class="chat-panel" id="chatPanel">
+        <div class="chat-panel-header">
+          <div class="chat-avatar">👟</div>
+          <div class="chat-info">
+            <div class="chat-name">SneakerHive Support</div>
+            <div class="chat-status">Online — ready to help</div>
+          </div>
+        </div>
+        <iframe
+          src="https://chat-box-83515c.zapier.app/"
+          title="SneakerHive Live Chat"
+          allow="microphone; camera"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <button class="chat-bubble" id="chatBubble" aria-label="Toggle chat" aria-expanded="false">
+        <span class="chat-badge" id="chatBadge">1</span>
+        <svg class="icon-open" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
